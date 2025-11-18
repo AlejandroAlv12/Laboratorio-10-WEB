@@ -10,6 +10,7 @@ import SalesReport from "./components/SalesReport";
 const App = () => (
   <Router>
     <Routes>
+      <Route path="/" element={<CustomerList />} />
       <Route path="/login" element={<Login />} />
       <Route path="/protected" element={<Protected />} />
       <Route path="/customers" element={<CustomerList />} />
