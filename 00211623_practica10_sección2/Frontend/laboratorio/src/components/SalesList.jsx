@@ -115,7 +115,8 @@ const SalesList = () => {
 
       {error && <p>{error}</p>}
 
-      <table>
+      <div style={{ overflowX: 'auto' }}>
+        <table className="sales-table">
         <thead>
           <tr>
             <th>ID</th>
@@ -134,7 +135,8 @@ const SalesList = () => {
             </tr>
           ))}
         </tbody>
-      </table>
+        </table>
+      </div>
     </div>
   );
 };

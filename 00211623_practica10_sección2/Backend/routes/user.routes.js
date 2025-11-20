@@ -24,7 +24,7 @@ router.put('/users/:id', verifyToken, updateUser)
 router.delete('/users/:id', verifyToken, deleteUser)
 router.get("/api/customers", getCustomers);
 router.post("/api/sales", createSale);
-router.get("/api/sales", verifyToken, getSales);
+router.get("/api/sales", getSales);
 router.get("/api/customers/search", verifyToken, searchCustomerByCode);
 router.get("/api/sales/report", verifyToken, getSalesReport);
 

@@ -40,3 +40,43 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Sales table styles */
+.sales-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.sales-table thead {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  color: #fff;
+}
+.sales-table th,
+.sales-table td {
+  padding: 10px 12px;
+  border: 1px solid #e6e9ee;
+  text-align: left;
+}
+.sales-table tbody tr:nth-child(even) {
+  background: #f9fbff;
+}
+.sales-table tbody tr:hover {
+  background: #eef4ff;
+}
+.sales-table th {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.sales-table td {
+  font-size: 0.92rem;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  .sales-table th, .sales-table td {
+    padding: 8px 6px;
+    font-size: 0.85rem;
+  }
+}
